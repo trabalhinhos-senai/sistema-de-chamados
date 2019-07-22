@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <script type="text/javascript" src="../bootstrap-custom/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bootstrap-custom/js/bootstrap.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Documentação</h1>
+        <p>Quando houver: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan iaculis lorem sed ultricies.
+            Cras quam elit, posuere convallis dignissim nec, laoreet in magna.</p>
+        <section class="doc-div">
+            <div class="conteudo">
+                <h2 id="C1">Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim interdum ultricies. Aliquam semper,
+                    tortor nec viverra feugiat, orci mi accumsan sapien, nec suscipit turpis magna id magna. Nulla imperdiet
+                    libero vel magna commodo semper. Maecenas cursus aliquam libero, sodales lacinia metus convallis id.
+                    Donec molestie interdum rhoncus. Vestibulum quis lectus ullamcorper, egestas libero et, venenatis odio.
+                    Aliquam in urna quis dolor lacinia eleifend at eget tellus. Proin malesuada eros ex, eu finibus nibh
+                    sodales at. Ut id placerat nisl, vel rhoncus lorem. Quisque lorem leo, maximus placerat dui rutrum, fringilla
+                    malesuada neque. In eget dolor suscipit, commodo erat a, molestie orci. Sed gravida urna eget dapibus
+                    iaculis. Sed ac odio tincidunt, blandit eros ac, porta diam.</p>
+
+                <h2 id="C2">Ut quam eros</h2>
+                <p>Ut quam eros, viverra in tortor nec, ultrices vulputate ipsum. Praesent condimentum aliquam magna sit amet
+                    varius. Phasellus consequat eu sapien quis condimentum. Integer fermentum posuere tincidunt. Duis rhoncus
+                    lectus eu elit consectetur accumsan. Sed vehicula laoreet libero et placerat. Vivamus sed viverra ex,
+                    ac cursus orci. Nullam suscipit aliquet euismod. Aenean sagittis dui a ullamcorper congue.</p>
+
+                <h2 id="C3">Ut eu pulvinar magna</h2>
+                <p>Ut eu pulvinar magna. Cras sapien metus, ultricies eget sem ac, finibus tempor lacus. Morbi interdum auctor
+                    tortor, non vestibulum quam laoreet ac. Maecenas et mauris in dolor vehicula fringilla. Quisque egestas
+                    vel augue ac rutrum. Etiam congue erat in porttitor elementum. Phasellus rhoncus faucibus erat sed dapibus.
+                    In hac habitasse platea dictumst. Nulla facilisi.</p>
+
+                <h2 id="C4">Aliquam eu ante sem</h2>
+                <p>Aliquam eu ante sem. Donec leo sapien, volutpat ut orci eu, fringilla elementum ex. Quisque diam dolor, dictum
+                    in metus eget, mattis elementum lacus. Pellentesque suscipit maximus massa eget semper. Sed ut facilisis
+                    enim. Vestibulum in sodales magna, nec fermentum odio. Vestibulum feugiat magna et velit pulvinar condimentum
+                    vel quis ex. Nam sed efficitur tellus, hendrerit ultrices mi. Nunc et dapibus velit, aliquet volutpat
+                    nulla. Proin et diam suscipit, sodales orci quis, aliquet felis. Donec id eleifend libero. Sed vulputate
+                    nibh orci, quis mollis neque viverra nec.</p>
+
+                <hr>
+                <h2 id="C5">Donec justo quam</h2>
+                <p>Donec justo quam, sagittis vel eros porttitor, rhoncus mattis quam. Donec lobortis hendrerit urna at congue.
+                    Etiam at nisi consectetur, finibus nulla eu, elementum lorem. Donec consectetur metus tortor, a sodales
+                    ipsum imperdiet sed. Aenean ut fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec sit amet purus vulputate orci tristique sodales ac eget augue.</p>
+
+                <img src="https://media.giphy.com/media/4mXjpVNJAFlvi/giphy.gif" class="center">
+
+                <p>Nam eget feugiat mi, ut imperdiet ante. Aliquam hendrerit est non porttitor aliquam. Pellentesque eu porttitor
+                    risus. Nulla elementum ultrices eros, ut porta purus pretium vel. In venenatis, felis a egestas fermentum,
+                    tortor sapien lacinia magna, sit amet malesuada ligula nisi sed nulla. Nullam nec luctus quam, id tempus
+                    leo. Etiam tincidunt libero vitae purus semper rhoncus. Morbi condimentum elit magna, at tincidunt ipsum
+                    lacinia ut.</p>
+
+            </div>
+            <div class="sumario">
+                <ul class="list-style">
+                    <li>
+                        <a href="#C1">Lorem ipsum dolor</a>
+                    </li>
+                    <li>
+                        <a href="#C2">Ut quam eros</a>
+                    </li>
+                    <li>
+                        <a href="#C3">Ut eu pulvinar magna</a>
+                    </li>
+                    <li>
+                        <a href="#C4">Aliquam eu ante sem</a>
+                    </li>
+                    <li>
+                        <a href="#C5">Donec justo quam</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>

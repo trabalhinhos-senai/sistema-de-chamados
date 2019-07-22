@@ -1,0 +1,55 @@
+body {
+    background-color: #3aafa9;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.userForm {
+    height: 400px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #cbedeb;
+    margin-top: 100px;
+    margin-bottom: auto;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.userForm::before {
+    margin: 10px auto;
+    vertical-align: middle;
+    content: url(../../images/Custom/Logo.png);
+}
+
+.textColor-myblack {
+    color: #17252a;
+}
+
+.forgotPassword {
+    min-height: 27px;
+    text-align: end;
+}
+
+.forgotPassword a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #17252a;
+}
+
+.btn-my-style {
+    background-color: #17252a;
+    color: #feffff;
+}
+
+.btn-my-style:hover, .btn-my-style:focus {
+    background-color: #343636;
+    color: #feffff;
+}

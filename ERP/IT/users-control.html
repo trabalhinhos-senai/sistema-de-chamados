@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <script type="text/javascript" src="../Js/script-IT-table.js"></script>
+    <title>Controle de Usuarios</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Usuários</h1>
+
+        <section>
+            <div class="head-table">
+                <div class="pull-right sub-header">
+                    <button onclick="formUser()" class="btn btn-my-style" id="open-ticket">Novo Usuario</button>
+                    <button class="btn btn-my-style" onclick="editarChamado()" id="edit">Editar</button>
+                    <button class="btn btn-my-style" id="">Mais</button>
+                </div>
+            </div>
+            <table class="table table-striped table-hover" id="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Usuario</th>
+                        <th>Departamento</th>
+                        <th>Gestor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Igor Ponchielli</td>
+                        <td>Técnico TI</td>
+                        <td>igor@ponchielli.com</td>
+                        <td>+55 (47) 3388-9995</td>
+                        <td>igor</td>
+                        <td>TI</td>
+                        <td>Felipe dos Santos</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Oliveira</td>
+                        <td>Estagiario</td>
+                        <td>maria.oliveira@ponchielli.com</td>
+                        <td>+55 (47) 3388-9911</td>
+                        <td>maria.oliveira</td>
+                        <td>RH</td>
+                        <td>João Vilela</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos Pereira</td>
+                        <td>Técnico Contabil</td>
+                        <td>marcos.pereira@ponchielli.com</td>
+                        <td>+55 (47) 3388-9918</td>
+                        <td>marcos.pereira</td>
+                        <td>Administrativo</td>
+                        <td>Amanda Manson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>

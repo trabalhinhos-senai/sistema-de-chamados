@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <title>Novo Usuário</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Cadastrar item no inventario</h1>
+        <form class="formulario" onsubmit="">
+            <div class="formulario_head">
+                <p>Dados do item</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="etiqueta">Etiqueta:</label>
+                    <div>
+                        <input class="form-control" type="text" placeholder="Obrigatório" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="tipo">Status:</label>
+                    <div>
+                        <select class="form-control">
+                            <option value="disponivel">Disponivel</option>
+                            <option value="em uso">Em Uso</option>
+                            <option value="em manutenção">Em Manutenção</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-7"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="serial">Serial:</label>
+                    <div>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="nome">Nome do item:</label>
+                    <div>
+                        <input class="form-control" type="text" placeholder="Obrigatório" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="so">Sistema Operacional:</label>
+                    <div>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-10">
+                    <button type="submit" class="btn btn-my-style btn-block">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>

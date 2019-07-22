@@ -1,0 +1,453 @@
+/*Principal---*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #feffff;
+}
+
+
+/*---Principal*/
+
+
+/*Cabeçalho---*/
+
+header {
+    background-color: #def2f1;
+    height: 70px;
+    max-width: 100%;
+    margin-left: 220px;
+    box-shadow: 5px -10px 50px #c5c5c5;
+}
+
+
+/*Barra Superior---*/
+
+.top_bar {
+    margin-right: 10px;
+}
+
+.top_bar ul {
+    list-style-type: none;
+}
+
+.top_bar hr {
+    border-left: 1px solid #17252a;
+    height: 50px;
+    margin: auto 1rem;
+    float: left;
+}
+
+.top_bar a img {
+    width: 26px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+.top_bar a {
+    margin: 0px 5px 0px 5px;
+    opacity: 1;
+    text-decoration: none;
+    display: block;
+}
+
+.top_bar a:hover {
+    opacity: 0.75;
+}
+
+.topbar-perfil {
+    color: #17252a;
+}
+
+.topbar-perfil div {
+    margin: -7px auto;
+}
+
+.topbar-perfil img {
+    min-width: 32px;
+}
+
+.img-32px {
+    max-width: 32px;
+}
+
+.img-head-pedido {
+    margin-top: 10%;
+}
+
+
+/*---Barra Superior*/
+
+
+/*---IMAGENS---*/
+
+#imgSearch {
+    content: url(../../images/icons/search.png);
+}
+
+#imgNotification {
+    content: url(../../images/icons/bell.png);
+}
+
+#imgSettings {
+    content: url(../../images/icons/settings.png);
+}
+
+#imgPerfil {
+    content: url(../../images/Custom/perfil.png);
+}
+
+#imgPerfilMaria {
+    content: url(../../images/Custom/perfilMaria.png);
+}
+
+#nomePerfil::after {
+    content: "Igor Ponchielli";
+}
+
+
+/*---Cabeçalho*/
+
+
+/*Rodapé---*/
+
+footer {
+    clear: both;
+    height: 70px;
+    max-width: 100%;
+    margin-left: 220px;
+    text-align: center;
+}
+
+footer::after {
+    content: "Copyright © Igor F. Ponchielli 2019";
+}
+
+footer hr {
+    border-top: 1px solid #17252a;
+    margin: 15px;
+}
+
+
+/*---Rodapé*/
+
+
+/*Barra Lateral---*/
+
+.side_bar {
+    background-color: #3aafa9;
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    /*padding-top: 80px;*/
+}
+
+.side_bar::before {
+    content: url(../../images/Custom/Logo.png);
+}
+
+.side_bar hr {
+    border-top: 1px solid #def2f1;
+    margin: 0 1rem 1rem;
+}
+
+.side_bar a span {
+    font-size: 14px;
+    color: #feffff;
+}
+
+.side_bar a img {
+    width: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.side_bar a {
+    margin: 0px 15px 0px 15px;
+    opacity: 0.75;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.side_bar a:hover {
+    opacity: 1;
+}
+
+
+/*---Barra Lateral*/
+
+
+/*Formulario---*/
+
+.formulario_head {
+    background-color: #cbedeb;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #cbedeb;
+    height: 30px;
+}
+
+.formulario_head p {
+    font-weight: bold;
+    padding: 3px 0px 3px 0px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-ticket {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-ticket p {
+    margin: 0 auto;
+    padding: 0px 3px;
+    height: 25px;
+}
+
+.form-pedido-ticket {}
+
+
+/*---Formulario*/
+
+
+/*Linha---*/
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-flex {
+    display: flex;
+}
+
+.row:after,
+.row-pd-5:after,
+.row-pd-10:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-pd-5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
+
+.row-head {
+    margin: 0 auto;
+}
+
+.row-pd-10 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+}
+
+
+/*---Linha*/
+
+label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.label-th {
+    padding: 8px;
+    margin: 0px;
+}
+
+.form-control {
+    border-radius: 15px;
+    border-color: #17252a;
+}
+
+.btn-my-style {
+    background-color: #17252a;
+    color: #feffff;
+}
+
+.btn-with-img {
+    background-image: linear-gradient(to bottom, #feffff, #c5c5c5);
+    font-weight: bold;
+    border-bottom: 4px solid #c5c5c5;
+    border-top: 0px;
+}
+
+.btn-with-img:hover {
+    border-bottom: 4px solid #17252a;
+}
+
+.btn-my-style:hover,
+.btn-my-style:focus {
+    background-color: #17252a;
+    display: inline-block;
+    color: #feffff;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.principal {
+    min-height: 100vh;
+    margin-left: 220px;
+    padding: 10px;
+}
+
+.metade-principal {
+    max-width: 540px;
+    padding: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.head-table {
+    background-color: #cbedeb;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #cbedeb;
+    min-height: 60px;
+}
+
+header {
+    padding: 10px;
+}
+
+.search-form input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 15px;
+}
+
+.input-border {
+    border: #17252a 1px solid;
+    border-radius: 3px;
+}
+
+.search-form button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: -5px;
+    max-height: 34px;
+}
+
+.search-form button img {
+    max-width: 20px;
+}
+
+#table tr td {
+    cursor: pointer;
+    /**importante para não mostrar cursor de texto**/
+}
+
+#table tr.selecionado td {
+    background-color: #c5c5c5;
+}
+
+.selecionado {
+    background-color: #c5c5c5;
+}
+
+.sub-header button {
+    margin: 13px 5px 13px 5px;
+}
+
+.textarea-fixed {
+    resize: none;
+}
+
+.textarea-mg-bottom {
+    margin-bottom: 10px;
+}
+
+textarea[type=text]:disabled {
+    background: #feffff;
+    cursor: context-menu;
+}
+
+.font-weight-bold p {
+    font-weight: bold;
+}
+
+
+/* borderless table */
+
+.table.table-borderless td {
+    text-align: end;
+}
+
+.table.table-nopadding th,
+.table.table-nopadding td {
+    padding: 0 !important;
+}
+
+.table.table-borderless td,
+.table.table-borderless th {
+    border: 0 !important;
+}
+
+.table.table-borderless {
+    margin-bottom: 0px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.doc-div {
+    display: flex;
+}
+
+.conteudo {
+    width: 85%;
+}
+
+.sumario {
+    width: 15%;
+}
+
+.doc-div hr {
+    border-top: 1px solid #17252a;
+    margin: 25px;
+}
+
+.list-style {
+        list-style-type: decimal;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+
+  }
+
+a.disabled span, a.disabled img {
+        font-size: 14px;
+        color: #feffff;
+        opacity: 0.5;
+}
+

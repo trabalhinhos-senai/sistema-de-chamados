@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <script type="text/javascript" src="../bootstrap-custom/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bootstrap-custom/js/bootstrap.js"></script>
+    <title>Central TI</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Central de Chamados</h1>
+        <section>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button onclick="formChamado()" class="btn btn-with-img btn-block">
+                            <img class="center" src="../images/icons/call-add.png">Abrir chamado
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button onclick="viewTicket()" class="btn btn-with-img btn-block">
+                            <img class="center" src="../images/icons/call-view.png">Ver chamados
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button onclick="documentation()" class="btn btn-with-img btn-block">
+                            <img class="center" src="../images/icons/bookmark.png">Documentação
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button onclick="winstore()" class="btn btn-with-img btn-block">
+                            <img class="center" src="../images/icons/downloading.png">Programas
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="formulario_head">
+                            <p>Ultimas noticias</p>
+                        </div>
+                        <div>
+                            <p>Mauris semper sed odio ultrices elementum. Sed bibendum facilisis commodo. Curabitur varius at tellus feugiat laoreet. Etiam sed scelerisque sem. Morbi ullamcorper nibh et condimentum pretium. Nunc eget pulvinar velit, ut porta
+                                leo. Sed quis mollis quam. Nam sodales sem quis nunc bibendum blandit.</p>
+                        </div>
+                        <hr>
+                        <div class="formulario_head">
+                            <p>Chamados recentes</p>
+                        </div>
+                        <div>
+                            <p>Chamado: 2019-000001 -- Reserva de notebook.</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <footer>
+        <hr>
+    </footer>
+
+</body>
+
+</html>

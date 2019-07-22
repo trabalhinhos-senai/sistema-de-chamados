@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <script type="text/javascript" src="../Js/script-IT-table.js"></script>
+    <title>Visualizar chamados</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Chamados</h1>
+
+        <section>
+            <div class="head-table">
+                <div class="pull-right sub-header">
+                    <button onclick="formChamado()" class="btn btn-my-style" id="open-ticket">Novo Chamado</button>
+                    <button class="btn btn-my-style" onclick="editarChamado()" id="edit">Editar</button>
+                    <button class="btn btn-my-style" id="">Mais</button>
+                </div>
+            </div>
+            <table class="table table-striped table-hover" id="table">
+                <thead>
+                    <tr>
+                        <th>ID Ticket</th>
+                        <th>Solicitante</th>
+                        <th>Titulo</th>
+                        <th>Nivel</th>
+                        <th>Tipo</th>
+                        <th>Categoria</th>
+                        <th>Operador</th>
+                        <th>Status</th>
+                        <th>Data Alvo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019-000001</td>
+                        <td>Maria Oliveira</td>
+                        <td>Reserva de notebook</td>
+                        <td>Normal</td>
+                        <td>Solicitação</td>
+                        <td>Hardware</td>
+                        <td>Igor Ponchielli</td>
+                        <td>Em progresso</td>
+                        <td>14/01/2019</td>
+                    </tr>
+                    <tr>
+                        <td>2019-000002</td>
+                        <td>Marcos Pereira</td>
+                        <td>Alteração no relatório de custos</td>
+                        <td>Baixo</td>
+                        <td>Requisição de serviço</td>
+                        <td>WebSystem</td>
+                        <td>Igor Ponchielli</td>
+                        <td>Aberto</td>
+                        <td>25/01/2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>

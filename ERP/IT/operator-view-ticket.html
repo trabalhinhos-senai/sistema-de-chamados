@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-custom/css/custom.css">
+    <script type="text/javascript" src="../Js/script-IT.js"></script>
+    <title>Visualizar chamados</title>
+</head>
+
+<body>
+    <div class="side_bar">
+        <hr>
+        <a onclick="backToHome()">
+            <img src="../images/icons/home.png">
+            <span>Home</span>
+        </a>
+        <a onclick="toIndex()">
+            <img src="../images/icons/phone.png">
+            <span>Chamados</span>
+        </a>
+        <a onclick="userControl()">
+            <img src="../images/icons/user_male.png">
+            <span>Controle de Usuarios</span>
+        </a>
+        <a onclick="inventory()">
+            <img src="../images/icons/product.png">
+            <span>Inventario</span>
+        </a>
+        <a href="#" class="disabled">
+            <img src="../images/icons/statistics.png">
+            <span>Relatórios</span>
+        </a>
+    </div>
+    <header>
+        <form class="navbar-form navbar-left hidden-xs">
+            <div class="search-form">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button type="submit" class="btn btn-my-style">
+                    <img id="imgSearch" title="pesquisar">
+                </button>
+            </div>
+        </form>
+        <div class="top_bar">
+            <ul class="navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="#">
+                        <img id="imgNotification">
+                    </a>
+                </li>
+                <li class="hidden-xs">
+                    <a href="#">
+                        <img id="imgSettings">
+                    </a>
+                </li>
+                <hr class="hidden-xs">
+                <li>
+                    <a onclick="logoff()" class="topbar-perfil">
+                        <div>
+                            <span class="medium" id="nomePerfil"></span>
+                            <img class="img-circle" id="imgPerfil">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1 id="num-ticket"></h1>
+        <section class="form-ticket">
+            <div class="col-md-6">
+                <div class="formulario_head">
+                    <p>Solicitante</p>
+                </div>
+                <div class="row-pd-5">
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Nome:</th>
+                                    <td class="nopadding">
+                                        <input id="nome-usuario" class="form-control" type="text" value="Maria Oliveira">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Empresa:</th>
+                                    <td class="nopadding">
+                                        <input id="empresa-usuario" class="form-control" type="text" value="Ponchielli LTDA">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Departamento:</th>
+                                    <td class="nopadding">
+                                        <input id="setor-usuario" class="form-control" type="text" value="RH">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Telefone:</th>
+                                    <td class="nopadding">
+                                        <input id="telefone-usuario" class="form-control" type="text" value="+55 (47) 3388-9911">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cidade:</th>
+                                    <td class="nopadding">
+                                        <input id="cidade-usuario" class="form-control" type="text" value="Pomerode">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="formulario_head ">
+                    <p>Tipo de Chamado</p>
+                </div>
+                <div class="row-pd-5 ">
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Tipo:</th>
+                                    <td class="nopadding">
+                                        <input id="tipo-ticket" class="form-control" type="text" value="Solicitação">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Nível:</th>
+                                    <td class="nopadding">
+                                        <input id="nivel-ticket" class="form-control" type="text" value="Normal">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="formulario_head ">
+                    <p>Processamento</p>
+                </div>
+                <div class="row-pd-5 ">
+                    <div class="col-md-6">
+                        <div class="row-flex">
+                            <div class="col-md-4 nopadding">
+                                <label class="label-th">Data Alvo:</label>
+                            </div>
+                            <div class="col-md-8 nopadding">
+                                <input id="data-alvo-ticket" class="form-control" type="text" value="14/01/2019 13:37:02">
+                            </div>
+                        </div>
+
+                        <div class="row-flex">
+                            <div class="col-md-4 nopadding">
+                                <label class="label-th">Tempo Gasto:</label>
+                            </div>
+                            <div class="col-md-8" align="center">
+                                <input id="tempo-gasto-ticket-edit" class="input-border" type="text" maxlength="2" size="1" value="00">
+                                <button onclick="addTempo()" value="+">+</button>
+                                <input id="mais-tempo-gasto" class="input-border" type="text" maxlength="2" size="1" value="00" disabled>
+                            </div>
+                        </div>
+                        <div class="row-flex">
+                            <div class="col-md-4 nopadding">
+                                <label class="label-th">Data de Registro:</label>
+                            </div>
+                            <div class="col-md-8 nopadding">
+                                <input id="data-registro-ticket" class="form-control" type="text" value="10/01/2019 09:22:13">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Operador:</th>
+                                    <td class="nopadding">
+                                        <input id="operador-ticket" class="form-control" type="text" value="Igor Ponchielli">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Status:</th>
+                                    <td class="nopadding">
+                                        <input id="status-ticket" class="form-control" type="text" value="Em Progresso">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Data de Fechamento:</th>
+                                    <td class="nopadding">
+                                        <input id="data-fechamento-ticket" class="form-control" type="text" value="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="formulario_head ">
+                    <p>Anexos</p>
+                </div>
+                <div class="row-head table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data de Criação</th>
+                                <th scope="col">Criado por</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Tamanho</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11/01/2019</td>
+                                <td>Maria Oliveira</td>
+                                <td>Documento_teste-para-modelo.pdf</td>
+                                <td>806 kb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="formulario_head ">
+                    <p>Ação</p>
+                </div>
+                <div class="row-pd-5 ">
+                    <textarea required id="texto-acao" class="form-control textarea-fixed" rows="8 " type="text"></textarea>
+                </div>
+                <div class="row-pd-5 ">
+                    <div class="pull-right sub-header ">
+                        <button class="btn btn-my-style " id="edit ">Encerrar chamado</button>
+                        <button onclick="addAction() " class="btn btn-my-style ">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <!--PEDIDO-->
+            <div class="col-md-6 ">
+                <div class="formulario_head ">
+                    <p>Pedido</p>
+                </div>
+                <div class="row-head">
+                    <div class="col-md-1 nopadding">
+                        <img class="center-block img-circle img-32px img-head-pedido" id="imgPerfilMaria">
+                    </div>
+                    <div class="col-md-5 nopadding">
+                        <table class="table table-borderless table-nopadding">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <small id="nome-usuario1"></small>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left">
+                                        <small id="data-registro-ticket1"></small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 nopadding">
+                        <table class="table table-borderless table-nopadding">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <small>Telefone:</small>
+                                    </th>
+                                    <td>
+                                        <small id="telefone-usuario1"></small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <small>E-mail:</small>
+                                    </th>
+                                    <td>
+                                        <small id="email-usuario1"></small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <textarea disabled class="form-control textarea-fixed textarea-mg-bottom" rows="8" type="text"></textarea>
+                </div>
+            </div>
+            <!--ACAO DO CHAMADO-->
+            <div class="col-md-6 ">
+                <div class="row-pd-5 formulario_head">
+                    <p>Ação</p>
+                </div>
+                <div id="acao">
+
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>
