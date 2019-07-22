@@ -1,0 +1,101 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #3aafa9;
+    height: 80px;
+    max-width: 100%;
+    margin-left: 120px;
+    border-bottom: 1px #17252a solid;
+}
+
+.side_bar {
+    background-color: #3aafa9;
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    padding-top: 80px;
+    border-right: 1px #17252a solid;
+}
+
+.side_bar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #17252a;
+    display: block;
+}
+
+.side_bar a:hover {
+    color: aliceblue;
+}
+
+.formulario_head {
+    background-color: #cbedeb;
+    border: 1px #17252a solid;
+    height: 30px;
+}
+
+.formulario_head p {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    
+
+}
+
+.formulario {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-space {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column-right {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+}
+
+label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-control {
+
+}
+
+.field {
+    
+}
+
+.principal {
+    margin-left: 120px;
+    padding: 10px;
+}
